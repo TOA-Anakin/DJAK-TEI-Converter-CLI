@@ -46,13 +46,13 @@ Před spuštěním konverze se ujistěte, že skript `scripts/tei_convertor_fina
 
 **Možnost 1: Konverze jednoho souboru**
 ```bash
-./converter.sh local 10_DJAK_03_Ksaft.xml
+./converter.sh 10_DJAK_03_Ksaft.xml
 ```
 
 **Možnost 2: Hromadná konverze (Bulk)**
 Pokud nezadáte název souboru, skript automaticky zpracuje všechny XML soubory ve složce `input/`:
 ```bash
-./converter.sh local
+./converter.sh
 ```
 
 ## 4. Výstupy
