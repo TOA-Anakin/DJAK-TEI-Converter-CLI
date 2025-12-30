@@ -1,0 +1,16 @@
+services:
+  converter:
+    build:
+      context: ../../
+      dockerfile: .docker/local/Dockerfile
+    env_file: .env
+    volumes:
+      - ./../../input:/app/input
+      - ./../../output:/app/output
+      - ./../../scripts:/app/scripts
+    working_dir: /app
+    networks:
+      - network
+
+networks:
+  network:
